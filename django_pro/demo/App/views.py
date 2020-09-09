@@ -31,3 +31,6 @@ def Tem_old(request):
     context_obj = html_obj.render(context=context)
 
     return HttpResponse(context_obj)
+
+
+
