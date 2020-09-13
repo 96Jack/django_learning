@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     #     （1） app的名字（App）
     #      (2) App.apps.AppConfig
     'App',
+    'four',
 ]
 
 MIDDLEWARE = [

@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^index/', views.index),
     #主路由调用子路由，用include方法
     url(r'^app/', include("App.urls")),
+    url(r'^four/', include('four.urls')),
 ]
