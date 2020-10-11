@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     #      (2) App.apps.AppConfig
     'App',
     'four',
+    'two',
 ]
 
 MIDDLEWARE = [
@@ -84,7 +85,7 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'demo',
+        'NAME': 'User',
         'USER': 'root',
         'PASSWORD': '123',
         'HOST': 'localhost',
