@@ -17,7 +17,7 @@ class Grade(models.Model):
 
 class Student(models.Model):
     name = models.CharField(max_length=32)
-    s_grade = models.ForeignKey(Grade)
+    s_grade = models.ForeignKey(Grade,on_delete=models.CASCADE)
 
 
 # 主表
@@ -31,7 +31,8 @@ class Dept(models.Model):
 # 从表
 class Emp(models.Model):
     name = models.CharField(max_length=32)
-    e_dept = models.ForeignKey(Dept)
+    #  从表外键设置
+    e_dept = models.ForeignKey(Dept,on_delete=models.CASCADE)
 
     class Meta:
         db_table = 'Emp'
